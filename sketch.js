@@ -1,3 +1,5 @@
+//test
+
 let inputNames;
 // peter, emma, stephen, mary, dinner, bone
 let inputGroupSize;
