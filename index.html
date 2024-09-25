@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        margin: 0;
+        overflow-x: hidden; /* Disable horizontal scrolling */
+      }
+      #bgCanvas {
+        position: fixed; /* Keeps the background canvas fixed in place */
+        top: 0;
+        left: 0;
+        z-index: 0; /* Background layer */
+        pointer-events: none; /* Makes sure you can't interact with it */
+      }
+      #fgCanvas {
+        position: absolute; /* Foreground canvas will scroll with the page */
+        z-index: 1; /* Foreground layer */
+      }
+    </style>
+  </head>
+  <body>
+    <script src="bgSketch.js"></script> <!-- Background sketch -->
+    <script src="sketch.js"></script>   <!-- Foreground sketch -->
+  </body>
+</html>
